@@ -1,12 +1,13 @@
 import { definePreset } from '@pandacss/dev'
-import { colors, spacing, breakpoints } from './panda/tokens'
+import { colors, spacing, radii, breakpoints } from './panda/tokens'
 
 const panda = definePreset({
     name: 'fyrst-panda-preset',
     theme: {
         tokens: {
             colors: colors,
-            spacing: spacing
+            spacing: spacing,
+            radii: radii
         },
         extend: {
             breakpoints: breakpoints
