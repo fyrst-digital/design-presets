@@ -42,6 +42,8 @@ export const colors = defineTokens.colors({
 })
 
 export const spacing = defineTokens.spacing({
+    '3xs': { value: '2px' },
+    '2xs': { value: '4px' },
     xs: { value: '8px' },
     sm: { value: '12px' },
     md: { value: '16px' },
