@@ -2,7 +2,7 @@ import { defineSemanticTokens } from '@pandacss/dev'
 
 export const colors = defineSemanticTokens.colors({
     green: {
-        light: { value: '{colors.green.300}'},
+        pale: { value: '{colors.green.300}'},
         brand: { value: '{colors.green.400}'},
         dawn: { value: '{colors.green.600}'},
     },
