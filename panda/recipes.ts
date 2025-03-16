@@ -123,3 +123,75 @@ export const card = defineSlotRecipe({
         outlineColor: 'gradient1',
     }
 })
+
+export const button = defineRecipe({
+    className: 'btn',
+    base: {
+        display: 'inline flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        fontWeight: '600',
+        lineHeight: '1.5',
+        borderRadius: 'md',
+        borderStyle: 'solid',
+        borderWidth: '1px',
+        userSelect: 'none',
+        transition: 'background-color 300ms',
+        cursor: 'pointer',
+        _disabled: {
+            pointerEvents: 'none',
+            opacity: '0.5',
+        }
+    },
+    variants: {
+        color: {
+            primary: {
+                backgroundColor: 'green.pale',
+                color: 'grey.black',
+                borderColor: 'green.pale', // @todo replace with token
+                _hover: {
+                    backgroundColor: '#C5F6CB', // @todo replace with token
+                },
+                _active: {
+                    backgroundColor: '#78E284', // @todo replace with token
+                }
+            },            
+            secondary: {
+                backgroundColor: 'grey.night',
+                color: 'white',
+                borderColor: '#444444', // @todo replace with token
+                _hover: {
+                    backgroundColor: '#333333', // @todo replace with token
+                },
+                _active: {
+                    backgroundColor: 'grey.black', // @todo replace with token
+                }
+            },
+
+        },
+        size: {
+            sm: {
+                fontSize: 'sm',
+                gap: 'sm',
+                paddingBlock: 'xs',
+                paddingInline: 'lg',
+            },
+            md: {
+                fontSize: 'md',
+                gap: 'sm',
+                paddingBlock: 'sm',
+                paddingInline: 'lg',
+            },
+            lg: {
+                fontSize: 'lg',
+                gap: 'md',
+                paddingBlock: 'md',
+                paddingInline: 'xl',
+            },
+        },
+    },
+    defaultVariants: {
+        color: 'secondary',
+        size: 'sm',
+    }
+})
