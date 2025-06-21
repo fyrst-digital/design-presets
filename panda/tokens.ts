@@ -16,26 +16,35 @@ export const colors = defineTokens.colors({
         }
     },
     grey: {
+        50: {
+            value: '#fafafa',
+        },
         100: {
-            value: '#F9F9F9',
+            value: '#e5e5e5',
         },
         200: {
-            value: '#EEEEEE',
+            value: '#d4d4d4',
         },
         300: {
-            value: '#CCCCCC',
+            value: '#a3a3a3',
+        },
+        400: {
+            value: '#737373',
+        },
+        500: {
+            value: '#525252',
         },
         600: {
-            value: '#444444',
+            value: '#404040',
         },
         700: {
             value: '#333333',
         },
         800: {
-            value: '#222222',
+            value: '#262626',
         },
         900: {
-            value: '#191919',
+            value: '#171717',
             description: 'This is the darkest grey color in our design system and replaces black'
         },
     }

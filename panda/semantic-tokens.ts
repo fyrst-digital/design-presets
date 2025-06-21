@@ -7,6 +7,8 @@ export const colors = defineSemanticTokens.colors({
         dawn: { value: '{colors.green.600}'},
     },
     grey: {
+        dawn: { value: '{colors.grey.300}'},
+        dusk: { value: '{colors.grey.600}'},
         night: { value: '{colors.grey.800}'},
         black: { value: '{colors.grey.900}'}
     }
