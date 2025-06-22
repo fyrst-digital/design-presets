@@ -25,6 +25,11 @@ const panda = definePreset({
             }
         }
     },
+    conditions: {
+        extend: {
+            light: '.light &, .light&',
+        },
+    },
     patterns: {
         extend: {
             container: {
