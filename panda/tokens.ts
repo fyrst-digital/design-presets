@@ -2,9 +2,13 @@ import { defineTokens } from '@pandacss/dev'
  
 export const colors = defineTokens.colors({
     green: {
-        300: {
+        100: {
             value: '#A3EFAC',
             description: 'This is a light, pale green color and is references as pale-green'
+        },
+        300: {
+            value: '#19bf56',
+            description: 'This is the fyrst brand green color and is referenced as brand-green'
         },
         400: {
             value: '#05C260',
