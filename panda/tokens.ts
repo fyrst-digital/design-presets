@@ -1,6 +1,14 @@
 import { defineTokens } from '@pandacss/dev'
  
 export const colors = defineTokens.colors({
+    white: {
+        value: '#ffffff',
+        description: 'This is the primary white color used in our design system'
+    },
+    black: {
+        value: '#000000',
+        description: 'This is the primary black color used in our design system'
+    },
     green: {
         100: {
             value: '#A3EFAC',

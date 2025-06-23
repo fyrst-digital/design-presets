@@ -1,6 +1,6 @@
 {
   "name": "@fyrst/design-presets",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "module": "index.ts",
   "main": "index.ts",
   "type": "module",
